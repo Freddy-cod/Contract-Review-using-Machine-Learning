@@ -14,4 +14,7 @@ def about(request):
 
 
 def blog(request):
-    return render( request,'Home/about.html')
+    return render( request,'Home/blog.html')
+
+def signup(request):
+     return render( request,'Home/signup.html')

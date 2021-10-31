@@ -1,0 +1,48 @@
+{% extends "Home/base.html"%} {% load static%} {%block content%}
+    <div class="container">
+        <header class="head my-3">
+            <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="{% static "Home/images/logo.png" %}" alt="website logo">
+                    <span>Profred</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span>"{% static "Home/images/menu.png" %}" alt=""></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="#">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row custom-section d-flex align-items-center">
+            <div class="col-12 col-lg-4">
+                <h2>Draft Review</h2>
+                <h3>Manage</h3>
+                <p>We help startups and SMEs draft ,review and manage their contracts efficiently.</p>
+                <a href="#">Get started</a>
+            </div>
+            <div class="col-12 col-lg-8">
+                <img src="{% static "Home/images/main.png" %}"  alt="Team process banner">
+            </div>
+        </div>
+    </div>
+
+{% endblock%}
